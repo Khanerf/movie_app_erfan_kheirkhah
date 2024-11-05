@@ -16,7 +16,7 @@ Console.Write("Enter number of students: ");
             Console.WriteLine("nResult:");
             for (int i = 0; i < numberOfStudents; i++)
             {
-                int roundedScore = (int)Math.Round(scores[i]);
+                double roundedScore = (int)Math.Round(scores[i]);
                 string status = roundedScore > 10 ? "Pass" : "Fail";
 
                 Console.WriteLine($"Name: {names[i]}, Score: {roundedScore}, Status: {status}");
